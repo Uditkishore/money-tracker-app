@@ -1,18 +1,15 @@
 const express = require('express')
-const bodyParser = require("body-parser")
 
 const app = express();
 const connect = require('./configs/db');
 
 var cors = require('cors');
+app.use(express.json())
 app.use(cors());
 
-// const userController = require("./src/Routes/user");
-// const productController = require("./src/Routes/product");
-// const brandController = require("./src/Routes/brand");
-// app.use('/users', userController);
-// app.use('/product', productController);
-// app.use('/brand', brandController);
+const userController = require("./src/Routes/user.router");
+
+app.use('/users', userController);
 
 app.listen(8080, ()=>{
     connect();
