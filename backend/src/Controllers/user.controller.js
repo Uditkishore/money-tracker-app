@@ -24,13 +24,11 @@ exports.register = async(req, res) => {
         // Hash the password
         const hashedPassword = await bcrypt.hash(password, 10);
 
-        // Create a new user
         const user = new User({
             username,
             password: hashedPassword
         });
 
-        // Save the user to the database
         await user.save();
 
         return res.json({ message: 'User registered successfully' });
@@ -62,7 +60,6 @@ exports.login = async (req, res) => {
         // Generate a JWT token
         const token = jwt.sign({ userId: user._id }, 'secret-key');
 
-        // Send the token in the response
         res.json({ token });
     } catch (error) {
         console.error('Error logging in:', error);
