@@ -1,0 +1,84 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.containerLogin{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+}
+.containerTransaction{
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+}
+
+ label,
+ input[type="text"],
+ input[type="password"],
+ input[type="submit"] {
+  display: block;
+   width: 100%;
+   margin-bottom: 10px;
+   padding: 5px;
+ }
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.switch-form {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.homepage{
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.Logo{
+  color: #318d34;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.balance{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button{
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+  background-color: #318d34;
+}
+
